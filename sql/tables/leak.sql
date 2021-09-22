@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "leak" (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TEXT 
+);

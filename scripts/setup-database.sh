@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if ! command -v sqlite3 > /dev/null; then
+	echo "Error: sqlite3 is not installed"
+	exit 1
+fi
+
 DATABASE=src/data/feathers.db
 TABLES=sql/tables
 
